@@ -10,7 +10,7 @@
 	<body>
 		<center>
 			<h1 style="font-family:Chewy;">Random Name Generator Options</h1>
-			<div id="tabs" style="width:500px;">
+			<div id="tabs" style="width:500px;text-align:left;">
 				<ul>
 					<li>
 						<a href="#tabs-1">General</a>
@@ -24,17 +24,40 @@
 				</ul>
 				<div id="tabs-1">
 					<p>
-						 General settings
+						General settings
 					</p>
 				</div>
 				<div id="tabs-2">
 					<p>
-						How the names should be generated
+						<div style="width:100%;">
+							<input value="predefinedOptions" id="hn1" type="radio" name="hn">
+							<label for="hn1">Predefined Name Types</label>
+							<br>
+							<div id="predefinedOptions" style="display:none;">
+								Predefined Options
+								<br>
+							</div>
+							<input value="nameOptions" id="hn2" type="radio" name="hn">
+							<label for="hn2">Name List</label>
+							<br>
+							<div id="nameOptions" style="display:none;">
+								name Options
+								<br>
+							</div>
+							<input value="customOptions" id="hn3" type="radio" name="hn">
+							<label for="hn3">Custom Script</label>
+							<br>
+							<div id="customOptions" style="display:none;">
+								custom Options
+								<br>
+							</div>
+						</div>
 					</p>
 				</div>
 				<div id="tabs-3">
 					<p>
 						Scripts and name lists
+					</p>
 				</div>
 			</div>
 		</center>
