@@ -6,4 +6,10 @@ $(function() {
 		$("#customOptions").slideUp();
 		$("#"+$(this).val()).slideDown();
 	});
+	$("#predefinedNameType").change(function(){
+		if($(this).val()=="popular")
+			$("#popularInfo").slideDown();
+		else
+			$("#popularInfo").slideUp();
+	})
 });

@@ -34,7 +34,12 @@
 							<label for="hn1">Predefined Name Types</label>
 							<br>
 							<div id="predefinedOptions" style="display:none;">
-								Predefined Options
+								<select id="predefinedNameType">+
+									<option value="random">Random names (not perfect)</option>
+									<option value="popular">Popular names</option>
+									<option value="classic">Classic (before v3)</option>
+								</select><br>
+								<div id="popularInfo" style="display:none;">Source: <a href="http://www.ssa.gov/OACT/babynames/index.html">ssa.gov</a></div>
 							</div>
 							<input value="nameOptions" id="hn2" type="radio" name="hn">
 							<label for="hn2">Name List</label>
