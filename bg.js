@@ -4,6 +4,14 @@ function genName(info, tab){
 	chrome.tabs.executeScript(null,{code:"document.activeElement.value+='"+name+"';"})
 }
 function getName(){
-	name = "Ineentho";
+	if(getOpt("names.type")=="predefinedOptions"){
+		//Built in names
+		if(getOpt("names.predefined.type")=="random")
+			name = genNameRandom();
+		else if(getOpt("names.predefined.type")=="popular")
+			name = genNamePopular();
+		else
+			name = genNameClassic();
+	}
 	return name;
 }
