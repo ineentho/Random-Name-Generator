@@ -1,7 +1,7 @@
 <html>
 	<head>
 		<title>Options - RNG</title>
-		<link type="text/css" href="jQueryUi/css/redmond/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />	
+		<link type="text/css" href="jQueryUi/css/redmond/jquery-ui-1.8.16.custom.css" rel="Stylesheet" />
 		<link href='http://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="jQueryUi/js/jquery-1.6.2.min.js"></script>
 		<script type="text/javascript" src="jQueryUi/js/jquery-ui-1.8.16.custom.min.js"></script>
@@ -10,14 +10,31 @@
 	<body>
 		<center>
 			<h1 style="font-family:Chewy;">Random Name Generator Options</h1>
-			<div id="accordion" style="width:500px;text-align:left;">
-				<h3><a href="#">General</a></h3>
-				<div>First content</div>
-				<h3><a href="#">Names</a></h3>
-				<div>
-					<label for="amount">Name mode: </label>
-					<input type="text" id="amount" style="border:0; color:#f6931f; font-weight:bold;" />
-					<div id="slider"></div>
+			<div id="tabs" style="width:500px;">
+				<ul>
+					<li>
+						<a href="#tabs-1">General</a>
+					</li>
+					<li>
+						<a href="#tabs-2">Names</a>
+					</li>
+					<li>
+						<a href="#tabs-3">Name List And Scripts</a>
+					</li>
+				</ul>
+				<div id="tabs-1">
+					<p>
+						 General settings
+					</p>
+				</div>
+				<div id="tabs-2">
+					<p>
+						How the names should be generated
+					</p>
+				</div>
+				<div id="tabs-3">
+					<p>
+						Scripts and name lists
 				</div>
 			</div>
 		</center>
