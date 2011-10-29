@@ -37,6 +37,6 @@ function genNameClassic(){
 	return name;
 }
 function genNamePopular(){
-	//Built in type random
-	return "popular";
+	names=getPopularNames();
+	return names[Math.random()*names.length|0];
 }
