@@ -2,9 +2,7 @@
 	"name": "Random Name Generator",
 	"version": "3.0",
 	"description": "A extension that will come up with names for you!",
-	"permissions": ["contextMenus",
-	"*://*/*",
-	"tabs"],
+	"permissions": ["contextMenus", "*://*/*", "tabs"],
 	"background_page": "background.html",
 	"icons": {
 		"16": "icon16.png",

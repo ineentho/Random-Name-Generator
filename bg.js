@@ -1,14 +1,20 @@
-chrome.contextMenus.create({"title": "Generate random name", "contexts":["editable"], "onclick": genName});
-function genName(info, tab){
-	name=getName();
-	chrome.tabs.executeScript(null,{code:"document.activeElement.value+='"+name+"';"})
+chrome.contextMenus.create({
+	"title" : "Generate random name",
+	"contexts" : [ "editable" ],
+	"onclick" : genName
+});
+function genName(info, tab) {
+	name = getName();
+	chrome.tabs.executeScript(null, {
+		code : "document.activeElement.value+='" + name + "';"
+	})
 }
-function getName(){
-	if(getOpt("names.type")=="predefinedOptions"){
-		//Built in names
-		if(getOpt("names.predefined.type")=="random")
+function getName() {
+	if (getOpt("names.type") == "predefinedOptions") {
+		// Built in names
+		if (getOpt("names.predefined.type") == "random")
 			name = genNameRandom();
-		else if(getOpt("names.predefined.type")=="popular")
+		else if (getOpt("names.predefined.type") == "popular")
 			name = genNamePopular();
 		else
 			name = genNameClassic();
