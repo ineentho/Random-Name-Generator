@@ -10,6 +10,7 @@ function genName(info, tab) {
 	})
 }
 function getName() {
+	//Commit test
 	if (getOpt("names.type") == "predefinedOptions") {
 		// Built in names
 		if (getOpt("names.predefined.type") == "random")
